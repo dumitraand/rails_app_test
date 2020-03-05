@@ -1,5 +1,8 @@
 version: 0.0
 os: linux
+files:
+  source: /
+  destination: /tmp/rails-app
 hooks:
   ApplicationStop:
     - location: aws-scripts/stop_server.sh
