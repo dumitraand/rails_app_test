@@ -1,7 +1,7 @@
 #! /bin/bash
 
 bundler_installed=$(gem list -i bundler)
-if [[ $bundler_installed ]] then
+if [[ $bundler_installed == true ]]; then
   echo "gem: --no-rdoc --no-ri" > ~/.gemrc
   cd /tmp/rails-app && bundle install
 else
