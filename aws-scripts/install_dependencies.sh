@@ -1,3 +1,5 @@
 #! /bin/bash
 
-bundle install
+# bundle install
+
+ls
